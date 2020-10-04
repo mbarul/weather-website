@@ -1,5 +1,5 @@
 body {
-    background-image:
+   
 }
 
 .box {
@@ -14,3 +14,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.search{
+    display:flex;
+    flex-direction:column;
+}
+
+.Fsearch {
+    display: flex;
+    flex-direction: column;
+}
