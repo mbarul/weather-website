@@ -1,3 +1,16 @@
 body {
     background-image:
 }
+
+.box {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
