@@ -68,32 +68,17 @@ div.rain {
     flex-direction: column;
 }
 
-.searchButton {
-    box-shadow: inset 0px 1px 0px 0px #e0f0ff;
-    background: linear-gradient(to bottom, #24e2f0 5%, #80b5ea 100%);
-    background-color: #24e2f0;
-    border-radius: 6px;
-    border: 1px solid #3d9eff;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 2px 2px 0px #00728f;
-    opacity:0.8;
+
+
+#nameCity {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 16px 16px;
+    color: #424242;
+    font-size: 25px;
+    outline:none;
 }
 
-.searchButton:hover {
-    background: linear-gradient(to bottom, #80b5ea 5%, #24e2f0 100%);
-    background-color: #80b5ea;
-}
-
-.searchButton:active {
-    position: relative;
-    top: 1px;
-}
 
         
