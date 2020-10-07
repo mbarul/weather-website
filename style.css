@@ -14,7 +14,19 @@ main {
     background-size: cover;
 }
 
-
+.box-shadow {
+    width: 320px;
+    height: 100px;
+    background: rgb(177,184,195);
+    opacity: 0.7;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+}
 
 div.rain {
     height: 100%;
@@ -41,8 +53,6 @@ div.rain {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(177,184,195);
-    opacity:0.7;
 }
 
 .search{
