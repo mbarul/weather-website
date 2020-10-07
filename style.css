@@ -1,12 +1,13 @@
 body {
     margin: 0;
-
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     padding: 0;
 }
 
 main {
+
     background-image: url(images/natury.jpg);
     height: 100%;
     width: 100%;
@@ -21,6 +22,8 @@ div.rain {
     height: 100%;
     background-image: url(images/rain.png);
     animation: rain .3s linear infinite;
+    background-color: black;
+    opacity: 0.4;
 }
 
 @keyframes rain {
@@ -30,6 +33,101 @@ div.rain {
 
     100% {
         background-position: 20% 100%;
+    }
+}
+
+/* animation sun */
+
+/* .sun {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 10vw;
+    height: 10vw;
+    background-color: yellow;
+    opacity: 0.5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ffde0080,
+        0 0 0 20px #ffde0040,
+        0 0 0 30px #ffde0020,
+        0 0 0 40px #ffde0010,
+        0 0 0 50px #ffde0000,
+        0 0 40px 50px #ffde0080;
+    animation: sunny 5s infinite linear forwards;
+
+}
+
+@keyframes sunny {
+
+
+    50% {
+        box-shadow: 0 0 0 5px #ffde0080,
+            0 0 0 10px #ffde0040,
+            0 0 0 15px #ffde0020,
+            0 0 0 20px #ffde0010,
+            0 0 0 25px #ffde0000,
+            0 0 80px 25px #ffde0080;
+    }
+
+
+} */
+
+/*animation storm*/
+.storm {
+    background-color: white;
+    opacity: 0;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: storm 15s infinite linear;
+
+}
+
+@keyframes storm {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .3;
+    }
+
+    20% {
+        opacity: .7;
+    }
+
+    30% {
+        opacity: .2;
+    }
+
+    40% {
+        opacity: .8;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    60% {
+        opacity: .6;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    90% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: .2;
     }
 }
 
