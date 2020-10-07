@@ -14,11 +14,11 @@ main {
     background-size: cover;
 }
 
-.box-shadow {
-    width: 320px;
-    height: 100px;
+.boxShadow {
+    width: 260px;
+    height: 200px;
     background: rgb(177,184,195);
-    opacity: 0.7;
+    opacity: 0.6;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -26,6 +26,8 @@ main {
     align-content: center;
     align-items: center;
     position: absolute;
+    box-shadow: 0px 0px 50px 50px rgb(177,184,195);
+    border-radius:10px;
 }
 
 div.rain {
@@ -53,6 +55,7 @@ div.rain {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+   line-height:30px;
 }
 
 .search{
@@ -64,3 +67,33 @@ div.rain {
     display: flex;
     flex-direction: column;
 }
+
+.searchButton {
+    box-shadow: inset 0px 1px 0px 0px #e0f0ff;
+    background: linear-gradient(to bottom, #24e2f0 5%, #80b5ea 100%);
+    background-color: #24e2f0;
+    border-radius: 6px;
+    border: 1px solid #3d9eff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px #00728f;
+    opacity:0.8;
+}
+
+.searchButton:hover {
+    background: linear-gradient(to bottom, #80b5ea 5%, #24e2f0 100%);
+    background-color: #80b5ea;
+}
+
+.searchButton:active {
+    position: relative;
+    top: 1px;
+}
+
+        
