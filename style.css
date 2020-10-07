@@ -41,6 +41,7 @@ div.rain {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background: rgb(177,184,195);
 }
 
 .search{
