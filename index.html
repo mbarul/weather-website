@@ -9,33 +9,29 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="../javascript.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
     <main>
         <div class="rain"></div>
         <div class="boxShadow"></div>
         <div class="box">
-
- 
+                
                 <div class="search">
-                    <form class="Fsearch">
-                       
-                        <input type="text" id="nameCity" placeholder="Wyszukaj miasto..." />
+                    <form class="Fsearch" onsubmit="searching(); return false">
+                        <span id="city"> </span>
+                         <input type="text"  id="nameCity"  placeholder="Wyszukaj miasto"  />
                     </form>
-                   
                 </div>
-                <span class="date">
+                <span id="date">
                     Data
                 </span>
-                <span class="Celsius" >
+                <span id="Celsius" >
                     test1
                 </span>
-                <span class="conditions">
+                <span id="conditions">
                     test2
                 </span>
             </div>
-
-
-    </main>
+     </main>
 </body>
 
 </html>
