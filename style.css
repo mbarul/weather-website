@@ -38,7 +38,7 @@ div.rain {
 
 /* animation sun */
 
-/* .sun {
+.sun {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -70,7 +70,7 @@ div.rain {
     }
 
 
-} */
+}
 
 /*animation storm*/
 .storm {
