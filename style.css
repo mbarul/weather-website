@@ -16,8 +16,94 @@ main {
     background-size: cover;
 }
 
+.boxShadow {
+    width: 260px;
+    height: 200px;
+    background: rgb(177, 184, 195);
+    opacity: 0.65;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0px 0px 50px 50px rgb(177, 184, 195);
+    border-radius: 10px;
+}
+
+/*snow*/
+
+div.snow {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/snow.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: snow 6s linear infinite;
+    filter: blur(2px);
+    background-size: 50%;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 400px -300px;
+    }
+
+    100% {
+        background-position: 100px 650px;
+    }
+}
+
+div.snow2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/snow.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: snow2 5s linear infinite;
+    filter: blur(3px);
+    background-size: 70%;
+}
+
+@keyframes snow2 {
+    0% {
+        background-position: 0 -200px;
+    }
+
+    100% {
+        background-position: 300px 650px;
+
+    }
+}
+
+div.snow3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/snow.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: snow3 3s linear infinite;
+    filter: blur(5px);
+    background-size: 110%;
+}
+
+@keyframes snow3 {
+    0% {
+        background-position: 0px 50px;
+    }
+
+    100% {
+        background-position: 100px 650px;
+
+    }
+}
 
 /*image rain*/
+
 div.rain {
     height: 100%;
     background-image: url(images/rain.png);
@@ -73,11 +159,12 @@ div.rain {
 }
 
 /*animation storm*/
+
 .storm {
     background-color: white;
     opacity: 0;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -141,6 +228,7 @@ div.rain {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    line-height: 60px;
 }
 
 .search {
@@ -151,4 +239,60 @@ div.rain {
 .Fsearch {
     display: flex;
     flex-direction: column;
+}
+
+
+
+#nameCity {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 0 0 16px 16px;
+    color: #424242;
+    font-size: 25px;
+    outline: none;
+}
+
+
+#Date {
+    font-size: 40px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #1D5D72;
+    opacity: 0.75;
+    font-weight: 600;
+    text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+}
+
+#Celsius {
+    font-size: 45px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #755C1E;
+    font-weight: 600;
+    text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+}
+
+#Conditions {
+    font-size: 35px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #755C1E;
+    font-weight: 600;
+    text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+}
+
+#city {
+    font-size: 60px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #1D5D72;
+    opacity: 0.75;
+    font-weight: 800;
+    text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+    margin-top: 10px;
 }
