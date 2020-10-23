@@ -16,7 +16,7 @@ function searching() {
         let d = new Date();
         let UTC = d.getTimezoneOffset()*60;
         d.setSeconds(results.timezone + UTC);
-        document.getElementById("Time").innerHTML = d.getHours() + '.' + d.getMinutes() + ' | ' + d.getDate() + '.' + d.getMonth()+ '.' + d.getFullYear();
+        document.getElementById("Time").innerHTML = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' | ' + d.toLocaleDateString();
    
     });
     
