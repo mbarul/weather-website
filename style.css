@@ -256,6 +256,7 @@ main {
     color: #424242;
     font-size: 25px;
     outline: none;
+    
 }
 
 
@@ -268,6 +269,7 @@ main {
     opacity: 0.75;
     font-weight: 600;
     text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+    visibility: visible;
 }
 
 #cel {
@@ -278,6 +280,7 @@ main {
     color: #755C1E;
     font-weight: 600;
     text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+    visibility: visible;
 }
 
 #Conditions {
@@ -288,6 +291,7 @@ main {
     color: #755C1E;
     font-weight: 600;
     text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
+    visibility: visible;
 }
 
 #city {
@@ -300,4 +304,10 @@ main {
     font-weight: 800;
     text-shadow: 4px 3px rgba(70, 100, 100, 0.5);
     margin-top: 10px;
+}
+
+#error {
+    color: #DC2B05;
+    font-size: 20px;
+    visibility: hidden;
 }
