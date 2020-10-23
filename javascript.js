@@ -6,10 +6,10 @@ function searching() {
         document.getElementById("city").innerHTML = x + " :";
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=118aa3da3a47e88cef12f69cb6bdcf0b`).then(response => {
          return response.json(); }).then(results => {
-        console.log(results);
+             console.log(results);
+                 //Error check
              if (results.cod === '404') {
-                 var Err = document.getElementById('error');
-                 Err.style.visibility = 'visible';
+                 document.getElementById('error').style.visibility = 'visible';
                  document.getElementById('Conditions').style.visibility = 'hidden';
                  document.getElementById('cel').style.visibility = 'hidden';
                  document.getElementById('Time').style.visibility = 'hidden';
