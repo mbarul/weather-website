@@ -1,5 +1,4 @@
-
-
+ 
 
 function searching() {
         
@@ -22,13 +21,33 @@ function searching() {
     });
     
 }
-function init(resultsFromServer){
-    let x = document.getElementById('sun');
-    if (resultsFromServer.weather[0].main === 'Clear') {
-         x.style.visibility === "visible";
+function init(resultsFromServer) {
+    
+    let weather = resultsFromServer.weather[0].main;
+    switch (weather) {
+        case 'Clear':
+            var con = document.getElementById('sun');
+            con.style.visibility = 'visible';
+            break;
+        case 'Clouds':
+            break;
+        case 'Rain':
+            var con = document.getElementById('rain');
+            con.style.visibility = 'visible';
+            break;
+        case 'Thunderstorm':
+            var con = document.getElementById('storm');
+            con.style.visibility = 'visible';
+            break;
+        case 'Snow':
+            var con1 = document.getElementById('snow');
+            var con2 = document.getElementById('snow2');
+            var con3 = document.getElementById('snow3');
+            con1.style.visibility = 'visible';
+            con2.style.visibility = 'visible';
+            con3.style.visibility = 'visible';
+            break;
     }
-    else {
-        x.style.visibility= 'hidden';
-    }
+
 }
 
