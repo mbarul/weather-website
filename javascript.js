@@ -2,18 +2,30 @@
 
 function searching() {
         
-        let x = document.getElementById("nameCity").value;
+       var x = document.getElementById("nameCity").value;
         document.getElementById("city").innerHTML = x + " :";
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=118aa3da3a47e88cef12f69cb6bdcf0b`).then(response => {
          return response.json(); }).then(results => {
              console.log(results);
                  //Error check
              if (results.cod === '404') {
-                 document.getElementById('error').style.visibility = 'visible';
+                 document.getElementById('error1').style.visibility = 'visible';
+                 document.getElementById('error2').style.visibility = 'hidden';
+                 document.getElementById('Conditions').style.visibility = 'hidden';
+                 document.getElementById('cel').style.visibility = 'hidden';
+                 document.getElementById('Time').style.visibility = 'hidden';
+             } else if (results.cod === '400') {
+                 document.getElementById('error1').style.visibility = 'hidden';
+                 document.getElementById('error2').style.visibility = 'visible';
                  document.getElementById('Conditions').style.visibility = 'hidden';
                  document.getElementById('cel').style.visibility = 'hidden';
                  document.getElementById('Time').style.visibility = 'hidden';
              } else {
+                 document.getElementById('error1').style.visibility = 'hidden';
+                 document.getElementById('error2').style.visibility = 'hidden';
+                 document.getElementById('Conditions').style.visibility = 'visible';
+                 document.getElementById('cel').style.visibility = 'visible';
+                 document.getElementById('Time').style.visibility = 'visible';
                  init(results);
                  //temp
                  Celsius.innerHTML = (Math.round(((results.main.temp - 273.15) * 100)) / 100);

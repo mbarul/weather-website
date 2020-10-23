@@ -306,7 +306,12 @@ main {
     margin-top: 10px;
 }
 
-#error {
+#error1{
+    color: #DC2B05;
+    font-size: 20px;
+    visibility: hidden;
+}
+#error2 {
     color: #DC2B05;
     font-size: 20px;
     visibility: hidden;
