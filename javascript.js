@@ -24,11 +24,11 @@ function searching() {
 }
 function init(resultsFromServer){
     let x = document.getElementById('sun');
-    x.style.visibility === "visible";
-    switch(resultsFromServer.weather[0].main) {
-        case 'clear sky' :
-           x.style.visibility === "visible";
-             break;
+    if (resultsFromServer.weather[0].main === 'Clear') {
+         x.style.visibility === "visible";
+    }
+    else {
+        x.style.visibility= 'hidden';
     }
 }
 

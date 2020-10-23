@@ -125,7 +125,7 @@ main {
 /* animation sun */
 
 #sun {
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     top: 5%;
     left: 5%;
