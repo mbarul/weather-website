@@ -51,19 +51,43 @@ function init(resultsFromServer) {
     switch (weather) {
         case 'Clear':
             document.getElementById('sun').style.visibility = 'visible';
+            document.getElementById('snow').style.visibility = 'hidden';
+            document.getElementById('snow2').style.visibility = 'hidden';
+            document.getElementById('snow3').style.visibility = 'hidden';
+            document.getElementById('storm').style.visibility = 'hidden';
+            document.getElementById('rain').style.visibility = 'hidden';
             break;
         case 'Clouds':
+            document.getElementById('snow').style.visibility = 'hidden';
+            document.getElementById('snow2').style.visibility = 'hidden';
+            document.getElementById('snow3').style.visibility = 'hidden';
+            document.getElementById('storm').style.visibility = 'hidden';
+            document.getElementById('rain').style.visibility = 'hidden';
+            document.getElementById('sun').style.visibility = 'hidden';
             break;
         case 'Rain':
             document.getElementById('rain').style.visibility = 'visible';
+            document.getElementById('sun').style.visibility = 'hidden';
+            document.getElementById('snow').style.visibility = 'hidden';
+            document.getElementById('snow2').style.visibility = 'hidden';
+            document.getElementById('snow3').style.visibility = 'hidden';
+            document.getElementById('storm').style.visibility = 'hidden';
               break;
         case 'Thunderstorm':
             document.getElementById('storm').style.visibility = 'visible';
+            document.getElementById('rain').style.visibility = 'hidden';
+            document.getElementById('sun').style.visibility = 'hidden';
+            document.getElementById('snow').style.visibility = 'hidden';
+            document.getElementById('snow2').style.visibility = 'hidden';
+            document.getElementById('snow3').style.visibility = 'hidden';
              break;
         case 'Snow':
             document.getElementById('snow').style.visibility = 'visible';
             document.getElementById('snow2').style.visibility = 'visible';
             document.getElementById('snow3').style.visibility = 'visible';
+            document.getElementById('storm').style.visibility = 'hidden';
+            document.getElementById('rain').style.visibility = 'hidden';
+            document.getElementById('sun').style.visibility = 'hidden';
             break;
     }
 
