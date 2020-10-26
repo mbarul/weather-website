@@ -7,6 +7,7 @@ function searching() {
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=118aa3da3a47e88cef12f69cb6bdcf0b`).then(response => {
          return response.json(); }).then(results => {
              console.log(results);
+             
                  //Error check
              if (results.cod === '404') {
                  document.getElementById('error1').style.visibility = 'visible';
@@ -27,6 +28,7 @@ function searching() {
                  document.getElementById('cel').style.visibility = 'visible';
                  document.getElementById('Time').style.visibility = 'visible';
                  init(results);
+                 
                  //temp
                  Celsius.innerHTML = (Math.round(((results.main.temp - 273.15) * 100)) / 100);
                  //conditions
@@ -36,12 +38,14 @@ function searching() {
                  let UTC = d.getTimezoneOffset() * 60;
                  d.setSeconds(results.timezone + UTC);
                  document.getElementById("Time").innerHTML = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' | ' + d.toLocaleDateString();
-             }
+               
+                }
 
     });
     
 }
 function init(resultsFromServer) {
+    
     
     let weather = resultsFromServer.weather[0].main;
     switch (weather) {
@@ -64,4 +68,9 @@ function init(resultsFromServer) {
     }
 
 }
-
+oninit:function test () {
+    searching();
+    document.getElementById("nameCity").value = "london";
+     isloaded=true;
+    
+ }

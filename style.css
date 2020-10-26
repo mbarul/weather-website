@@ -256,12 +256,12 @@ main {
     color: #424242;
     font-size: 25px;
     outline: none;
-    
+
 }
 
 
 #Time {
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-variant: small-caps;
     text-transform: capitalize;
@@ -273,7 +273,7 @@ main {
 }
 
 #cel {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-variant: small-caps;
     text-transform: capitalize;
@@ -306,12 +306,19 @@ main {
     margin-top: 10px;
 }
 
-#error1{
+#error1 {
+    position: absolute;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    left: calc(50% - 210px);
+    width: 420px;
     color: #DC2B05;
     font-size: 20px;
     visibility: hidden;
 }
+
 #error2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    width: 420px;
     color: #DC2B05;
     font-size: 20px;
     visibility: hidden;
