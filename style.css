@@ -256,7 +256,8 @@ main {
     color: #424242;
     font-size: 25px;
     outline: none;
-
+    max-width: 300px;
+    margin: auto;
 }
 
 
