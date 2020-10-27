@@ -75,7 +75,7 @@ function init(resultsFromServer) {
               break;
         case 'Thunderstorm':
             document.getElementById('storm').style.visibility = 'visible';
-            document.getElementById('rain').style.visibility = 'hidden';
+            document.getElementById('rain').style.visibility = 'visible';
             document.getElementById('sun').style.visibility = 'hidden';
             document.getElementById('snow').style.visibility = 'hidden';
             document.getElementById('snow2').style.visibility = 'hidden';
